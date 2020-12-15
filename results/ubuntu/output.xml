@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on linux)" generated="20201215 03:53:50.049" rpa="false">
+<suite id="s1" name="Ubuntu" source="/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/Ubuntu.robot">
+<test id="s1-t1" name="CT01:Linux iniciar vpn">
+<kw name="Abre vpn">
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>forti.png</arg>
+</arguments>
+<msg timestamp="20201215 03:53:56.887" level="INFO">Image "/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/img/linux/forti.png" found at Box(left=325, top=731, width=45, height=35)</msg>
+<msg timestamp="20201215 03:53:56.887" level="INFO">Clicking image "forti.png" in position (347, 748)</msg>
+<status status="PASS" starttime="20201215 03:53:55.865" endtime="20201215 03:53:56.991"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:53:55.865" endtime="20201215 03:53:56.992"></status>
+</kw>
+<kw name="Click em &quot;connect&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>forti_${nomeImg}.png</arg>
+</arguments>
+<assign>
+<var>${img}</var>
+</assign>
+<msg timestamp="20201215 03:53:56.993" level="INFO">${img} = forti_connect.png</msg>
+<status status="PASS" starttime="20201215 03:53:56.992" endtime="20201215 03:53:56.993"></status>
+</kw>
+<kw name="Wait For" library="ImageHorizonLibrary">
+<doc>Tries to locate given image from the screen for given time.</doc>
+<arguments>
+<arg>${img}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:53:58.470" level="INFO">Image "forti_connect.png" found at (769, 498)</msg>
+<status status="PASS" starttime="20201215 03:53:56.993" endtime="20201215 03:53:58.470"></status>
+</kw>
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>${img}</arg>
+</arguments>
+<msg timestamp="20201215 03:53:58.689" level="INFO">Image "/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/img/linux/forti_connect.png" found at Box(left=723, top=480, width=92, height=36)</msg>
+<msg timestamp="20201215 03:53:58.689" level="INFO">Clicking image "forti_connect.png" in position (769, 498)</msg>
+<status status="PASS" starttime="20201215 03:53:58.471" endtime="20201215 03:53:58.792"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:53:56.992" endtime="20201215 03:53:58.794"></status>
+</kw>
+<kw name="Click em &quot;continue&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>forti_${nomeImg}.png</arg>
+</arguments>
+<assign>
+<var>${img}</var>
+</assign>
+<msg timestamp="20201215 03:53:58.802" level="INFO">${img} = forti_continue.png</msg>
+<status status="PASS" starttime="20201215 03:53:58.800" endtime="20201215 03:53:58.802"></status>
+</kw>
+<kw name="Wait For" library="ImageHorizonLibrary">
+<doc>Tries to locate given image from the screen for given time.</doc>
+<arguments>
+<arg>${img}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:53:59.475" level="INFO">Image "forti_continue.png" found at (825, 469)</msg>
+<status status="PASS" starttime="20201215 03:53:58.802" endtime="20201215 03:53:59.476"></status>
+</kw>
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>${img}</arg>
+</arguments>
+<msg timestamp="20201215 03:53:59.658" level="INFO">Image "/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/img/linux/forti_continue.png" found at Box(left=779, top=452, width=92, height=35)</msg>
+<msg timestamp="20201215 03:53:59.658" level="INFO">Clicking image "forti_continue.png" in position (825, 469)</msg>
+<status status="PASS" starttime="20201215 03:53:59.476" endtime="20201215 03:53:59.760"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:53:58.796" endtime="20201215 03:53:59.761"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:54:04.763" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201215 03:53:59.761" endtime="20201215 03:54:04.763"></status>
+</kw>
+<kw name="Click em &quot;stop&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>forti_${nomeImg}.png</arg>
+</arguments>
+<assign>
+<var>${img}</var>
+</assign>
+<msg timestamp="20201215 03:54:04.768" level="INFO">${img} = forti_stop.png</msg>
+<status status="PASS" starttime="20201215 03:54:04.766" endtime="20201215 03:54:04.768"></status>
+</kw>
+<kw name="Wait For" library="ImageHorizonLibrary">
+<doc>Tries to locate given image from the screen for given time.</doc>
+<arguments>
+<arg>${img}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:54:05.024" level="INFO">Image "forti_stop.png" found at (682, 525)</msg>
+<status status="PASS" starttime="20201215 03:54:04.769" endtime="20201215 03:54:05.024"></status>
+</kw>
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>${img}</arg>
+</arguments>
+<msg timestamp="20201215 03:54:05.189" level="INFO">Image "/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/img/linux/forti_stop.png" found at Box(left=604, top=507, width=157, height=37)</msg>
+<msg timestamp="20201215 03:54:05.189" level="INFO">Clicking image "forti_stop.png" in position (682, 525)</msg>
+<status status="PASS" starttime="20201215 03:54:05.025" endtime="20201215 03:54:05.291"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:54:04.764" endtime="20201215 03:54:05.291"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20201215 03:54:06.293" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201215 03:54:05.292" endtime="20201215 03:54:06.294"></status>
+</kw>
+<kw name="Click em &quot;close&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>forti_${nomeImg}.png</arg>
+</arguments>
+<assign>
+<var>${img}</var>
+</assign>
+<msg timestamp="20201215 03:54:06.300" level="INFO">${img} = forti_close.png</msg>
+<status status="PASS" starttime="20201215 03:54:06.298" endtime="20201215 03:54:06.300"></status>
+</kw>
+<kw name="Wait For" library="ImageHorizonLibrary">
+<doc>Tries to locate given image from the screen for given time.</doc>
+<arguments>
+<arg>${img}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:54:06.540" level="INFO">Image "forti_close.png" found at (880, 218)</msg>
+<status status="PASS" starttime="20201215 03:54:06.301" endtime="20201215 03:54:06.541"></status>
+</kw>
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>${img}</arg>
+</arguments>
+<msg timestamp="20201215 03:54:06.705" level="INFO">Image "/media/thiago/Arquivos/WATI/Teste_imagehorizonlibrary/img/linux/forti_close.png" found at Box(left=869, top=206, width=23, height=24)</msg>
+<msg timestamp="20201215 03:54:06.705" level="INFO">Clicking image "forti_close.png" in position (880, 218)</msg>
+<status status="PASS" starttime="20201215 03:54:06.541" endtime="20201215 03:54:06.808"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:54:06.295" endtime="20201215 03:54:06.809"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:53:55.861" endtime="20201215 03:54:06.809" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201215 03:53:50.050" endtime="20201215 03:54:06.810"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Ubuntu">Ubuntu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

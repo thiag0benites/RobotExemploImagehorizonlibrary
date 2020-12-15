@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201215 03:34:54.320" rpa="false">
+<suite id="s1" name="Windows" source="D:\WATI\Teste_imagehorizonlibrary\Windows.robot">
+<test id="s1-t1" name="CT01:Windows 10 menu iniciar">
+<kw name="Click em &quot;iniciar&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${nomeImg}.png</arg>
+</arguments>
+<assign>
+<var>${img}</var>
+</assign>
+<msg timestamp="20201215 03:34:54.456" level="INFO">${img} = iniciar.png</msg>
+<status status="PASS" starttime="20201215 03:34:54.455" endtime="20201215 03:34:54.456"></status>
+</kw>
+<kw name="Wait For" library="ImageHorizonLibrary">
+<doc>Tries to locate given image from the screen for given time.</doc>
+<arguments>
+<arg>${img}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201215 03:34:55.132" level="INFO">Image "iniciar.png" found at (24, 748)</msg>
+<status status="PASS" starttime="20201215 03:34:54.456" endtime="20201215 03:34:55.132"></status>
+</kw>
+<kw name="Click Image" library="ImageHorizonLibrary">
+<doc>Finds the reference image on screen and clicks it once.</doc>
+<arguments>
+<arg>${img}</arg>
+</arguments>
+<msg timestamp="20201215 03:34:55.703" level="INFO">Image "D:\WATI\Teste_imagehorizonlibrary\img\windows\iniciar.png" found at Box(left=3, top=728, width=42, height=40)</msg>
+<msg timestamp="20201215 03:34:55.703" level="INFO">Clicking image "iniciar.png" in position (24, 748)</msg>
+<status status="PASS" starttime="20201215 03:34:55.132" endtime="20201215 03:34:55.817"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:34:54.454" endtime="20201215 03:34:55.817"></status>
+</kw>
+<status status="PASS" starttime="20201215 03:34:54.454" endtime="20201215 03:34:55.822" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201215 03:34:54.320" endtime="20201215 03:34:55.825"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Windows">Windows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
