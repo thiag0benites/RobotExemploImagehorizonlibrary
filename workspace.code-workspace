@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../automacao_qualidade_mv"
 		}
 	]
 }
